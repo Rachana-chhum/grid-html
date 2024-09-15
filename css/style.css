@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-rows:1fr 8fr 1fr;
+        grid-template-areas:
+        'header header header'
+        'sidebar article Relatedposts'
+        'footer footer footer'
+        ;
+    }
+    .header{
+        grid-area: header;
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+    .sidebar{
+        background-color: darkgray;
+        grid-area: sidebar;
+        color: aliceblue;
+    }
+    .article{
+        grid-template-areas: 
+        'article1 article1 article1'
+        'article2 article2 article2'
+        'article3 article3 article3';
+        row-gap: 20px;
+        text-align: start;
+        font-weight: 200;
+        
+    }
+    .Article1{
+        grid-area: artical1;
+        background-color: white;
+        height: 25vh;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    .Article2{
+        grid-area: article2;
+        background-color: white;
+        height: 25vh;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    .Article3{
+        grid-area: article3;
+        background-color: white;
+        height: 25vh;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    .RelatedPosts{
+        background-color: rgb(93, 86, 86) ;
+        grid-area: Relatedposts;
+        color: aliceblue;
+    
+    }
+    .footer{
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
